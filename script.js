@@ -7,13 +7,13 @@ function compute()//function to compute result and display results
         interest=principal*years*rate/100;
         var current_date=new Date();
         var future_year=current_date.getFullYear()+years;
-        document.getElementById('result').innerHTML="If you deposit "+ "<strong>"
-                                                +principal+ "</strong>"+"<br>"+
-                                                " at an interest rate of "+"<strong>"+
-                                                rate+"%"+"</strong>"+"<br>"+
-                                                " you will receive an amount of "+"<strong>"+
-                                                interest+"</strong>"+"<br>"+
-                                                " in the year "+"<strong>"+future_year+"</strong>";
+        document.getElementById('result').innerHTML="If you deposit "+ "<span style='background-color:#FFFF00'>"+
+                                                +principal+ "</span>"+"<br>"+
+                                                " at an interest rate of "+"<span style='background-color:#FFFF00'>"+
+                                                rate+"%"+"</span>"+"<br>"+
+                                                " you will receive an amount of "+"<span style='background-color:#FFFF00'>"+
+                                                interest+"</span>"+"<br>"+
+                                                " in the year "+"<span style='background-color:#FFFF00'>"+future_year+"</span>";
     }
 }
 
