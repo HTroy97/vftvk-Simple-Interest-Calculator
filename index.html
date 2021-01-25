@@ -1,16 +1,39 @@
+<!DOCTYPE html>
 <html>
-    <head>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <head><!--This is the metadata of the webpage-->
+        <title>Simple Interest Calculator</title>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
+    <div class='maindiv'><!--All of the body is in a div tag with class 'maindiv'-->
         <h1>Simple Interest Calculator</h1>
-
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
+        <!--input with validation process for amount of money-->
+        Amount <input type="number" id="principal">  <br/>
+        <!--input of range type to get interest rate-->
+        Rate <input type="range" id="rate" min=1 max=20 step=0.25 value=10.25 
+            onchange="range_value()"> 
+        <span id='range_output'>10.25%</span> <br/>
+        <!--Input for number of years gotten from a select tag, with its ten options-->
+        No. of Years <select id="years">
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+            </select>  <br/>
+        <!--Span tag that displays the interest after calculation-->
         Interest : <span id="result"></span><br>
-
-        <button onclick="compute()">Compute</button>
+        <!--Button that calls compute function when pressed-->
+        <button onclick="compute()">Compute Interest</button>
+        <span id='result'></span>
+    </div>
     </body>
+    <!--Footer added for copyright issues-->
+    <footer>&copy Everybody can get rich</footer>
 </html>

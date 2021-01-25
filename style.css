@@ -1,4 +1,16 @@
-body {background-color:tan;}
-h1{color:green;}
+/*style for the body of the page*/
+body {background-color:black;
+font-family:Arial;
+color:white;}
 
+/*style for the h1 tag (aka Title of the page)*/
+h1{color:grey;
+font-family=Verdana;}
 
+/*style for the main div defined in html file*/
+div.maindiv{background-color:white;
+color:black;
+width:300px;
+padding:20px;
+border-radius: 25px 25px 25px 25px;
+text-align:center;}
